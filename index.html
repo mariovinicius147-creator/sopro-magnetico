@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="theme-color" content="#111111">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#111111"
+    >
+
+    <meta
+        name="apple-mobile-web-app-capable"
+        content="yes"
+    >
+
+    <meta
+        name="apple-mobile-web-app-status-bar-style"
+        content="default"
+    >
+
+    <meta
+        name="apple-mobile-web-app-title"
+        content="SOPRO"
+    >
 
     <title>SOPRO MAGNÉTICO</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+
+    <link
+        rel="manifest"
+        href="manifest.json"
+    >
+
+    <link
+        rel="apple-touch-icon"
+        href="apple-touch-icon.png"
+    >
 </head>
 
 <body>
@@ -17,40 +52,74 @@
     <main class="container">
 
         <section class="cabecalho">
-            <img src="logo_sm.png" alt="Logo SOPRO MAGNÉTICO" class="logo">
+
+            <img
+                src="logo_sm.png"
+                alt="Logo SOPRO MAGNÉTICO"
+                class="logo"
+            >
+
             <h1>SOPRO MAGNÉTICO</h1>
-            <h2>Controlo Pessoal do Funcionário</h2>
+
+            <h2>
+                Controlo Pessoal do Funcionário
+            </h2>
 
             <p>
                 Registe os seus dias de trabalho,
                 faltas, férias, folgas e baixa médica.
             </p>
+
         </section>
+
 
         <section class="cartao">
 
             <h3>Controlo diário</h3>
 
-            <label for="data">Data</label>
+
+            <label for="data">
+                Data
+            </label>
+
             <input
                 type="date"
                 id="data"
             >
 
-            <label for="situacao">Situação</label>
+
+            <label for="situacao">
+                Situação
+            </label>
 
             <select id="situacao">
-                <option value="Presente">Presente</option>
-                <option value="Falta">Falta</option>
+
+                <option value="Presente">
+                    Presente
+                </option>
+
+                <option value="Falta">
+                    Falta
+                </option>
+
                 <option value="Falta justificada">
                     Falta justificada
                 </option>
-                <option value="Férias">Férias</option>
+
+                <option value="Férias">
+                    Férias
+                </option>
+
                 <option value="Baixa médica">
                     Baixa médica
                 </option>
-                <option value="Folga">Folga</option>
+
+                <option value="Folga">
+                    Folga
+                </option>
+
             </select>
+
 
             <div id="areaHorario">
 
@@ -59,6 +128,7 @@
                 </label>
 
                 <select id="horario">
+
                     <option value="08:00-17:00">
                         08:00 – 17:00
                     </option>
@@ -70,11 +140,14 @@
                     <option value="08:00-17:30">
                         08:00 – 17:30
                     </option>
+
                 </select>
+
 
                 <div class="horas">
 
                     <div>
+
                         <label for="entrada">
                             Entrada
                         </label>
@@ -84,9 +157,12 @@
                             id="entrada"
                             value="08:00"
                         >
+
                     </div>
 
+
                     <div>
+
                         <label for="saida">
                             Saída
                         </label>
@@ -96,15 +172,18 @@
                             id="saida"
                             value="17:00"
                         >
+
                     </div>
 
                 </div>
+
 
                 <div id="almoco">
 
                     <div class="horas">
 
                         <div>
+
                             <label for="saidaAlmoco">
                                 Saída almoço
                             </label>
@@ -114,9 +193,12 @@
                                 id="saidaAlmoco"
                                 value="13:00"
                             >
+
                         </div>
 
+
                         <div>
+
                             <label for="retornoAlmoco">
                                 Regresso almoço
                             </label>
@@ -126,18 +208,26 @@
                                 id="retornoAlmoco"
                                 value="14:00"
                             >
+
                         </div>
 
                     </div>
 
                 </div>
 
+
                 <div class="total">
+
                     Total trabalhado:
-                    <strong id="totalHoras">8h 0min</strong>
+
+                    <strong id="totalHoras">
+                        8h 0min
+                    </strong>
+
                 </div>
 
             </div>
+
 
             <label for="observacao">
                 Observação
@@ -149,11 +239,13 @@
                 placeholder="Observação opcional"
             ></textarea>
 
+
             <button id="guardar">
                 GUARDAR REGISTO
             </button>
 
         </section>
+
 
         <section class="botoes">
 
@@ -171,21 +263,29 @@
 
         </section>
 
+
         <p class="aviso">
             Registo para controlo pessoal do funcionário.
         </p>
 
     </main>
 
+
     <script src="app.js"></script>
 
+
     <script>
+
         if ("serviceWorker" in navigator) {
+
             navigator.serviceWorker.register(
                 "service-worker.js"
             );
+
         }
+
     </script>
 
 </body>
+
 </html>
