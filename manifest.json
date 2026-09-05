@@ -1,0 +1,10 @@
+{
+  "name": "SOPRO MAGNÉTICO",
+  "short_name": "SOPRO",
+  "description": "Controlo pessoal do funcionário",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f4f4",
+  "theme_color": "#111111",
+  "lang": "pt-PT"
+}

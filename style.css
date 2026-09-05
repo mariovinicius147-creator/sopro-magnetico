@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #111;
+}
+
+.container {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.cabecalho {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cabecalho h1 {
+    margin-bottom: 6px;
+    font-size: 28px;
+}
+
+.cabecalho h2 {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.cabecalho p {
+    color: #555;
+    line-height: 1.5;
+}
+
+.cartao {
+    background: white;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.cartao h3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: white;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.horas {
+    display: flex;
+    gap: 12px;
+}
+
+.horas > div {
+    flex: 1;
+}
+
+.total {
+    margin-top: 18px;
+    padding: 14px;
+    background: #eeeeee;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+}
+
+button {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#guardar {
+    margin-top: 20px;
+    background: #111;
+    color: white;
+}
+
+.botoes {
+    margin-top: 16px;
+}
+
+.botoes button {
+    margin-bottom: 10px;
+    background: white;
+    color: #111;
+    border: 1px solid #ccc;
+}
+
+.aviso {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #666;
+}
+
+@media (max-width: 420px) {
+    .container {
+        padding: 14px;
+    }
+
+    .horas {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .cabecalho h1 {
+        font-size: 24px;
+    }
+}.logo {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
