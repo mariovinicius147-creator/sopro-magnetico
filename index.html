@@ -51,147 +51,113 @@
 
     <main class="container">
 
-        <section class="cabecalho">
+        <section id="telaPrincipal">
 
-            <img
-                src="logo_sm.png"
-                alt="Logo SOPRO MAGNÉTICO"
-                class="logo"
-            >
+            <section class="cabecalho">
 
-            <h1>SOPRO MAGNÉTICO</h1>
+                <img
+                    src="logo_sm.png"
+                    alt="Logo SOPRO MAGNÉTICO"
+                    class="logo"
+                >
 
-            <h2>
-                Controlo Pessoal do Funcionário
-            </h2>
+                <h1>SOPRO MAGNÉTICO</h1>
 
-            <p>
-                Registe os seus dias de trabalho,
-                faltas, férias, folgas e baixa médica.
-            </p>
+                <h2>
+                    Controlo Pessoal do Funcionário
+                </h2>
 
-        </section>
+                <p>
+                    Registe os seus dias de trabalho,
+                    faltas, férias, folgas e baixa médica.
+                </p>
 
-
-        <section class="cartao">
-
-            <h3>Controlo diário</h3>
+            </section>
 
 
-            <label for="data">
-                Data
-            </label>
+            <section class="cartao">
 
-            <input
-                type="date"
-                id="data"
-            >
+                <h3>Controlo diário</h3>
 
 
-            <label for="situacao">
-                Situação
-            </label>
-
-            <select id="situacao">
-
-                <option value="Presente">
-                    Presente
-                </option>
-
-                <option value="Falta">
-                    Falta
-                </option>
-
-                <option value="Falta justificada">
-                    Falta justificada
-                </option>
-
-                <option value="Férias">
-                    Férias
-                </option>
-
-                <option value="Baixa médica">
-                    Baixa médica
-                </option>
-
-                <option value="Folga">
-                    Folga
-                </option>
-
-            </select>
-
-
-            <div id="areaHorario">
-
-                <label for="horario">
-                    Horário do dia
+                <label for="data">
+                    Data
                 </label>
 
-                <select id="horario">
+                <input
+                    type="date"
+                    id="data"
+                >
 
-                    <option value="08:00-17:00">
-                        08:00 – 17:00
+
+                <label for="situacao">
+                    Situação
+                </label>
+
+                <select id="situacao">
+
+                    <option value="Presente">
+                        Presente
                     </option>
 
-                    <option value="07:00-15:00">
-                        07:00 – 15:00
+                    <option value="Falta">
+                        Falta
                     </option>
 
-                    <option value="08:00-17:30">
-                        08:00 – 17:30
+                    <option value="Falta justificada">
+                        Falta justificada
+                    </option>
+
+                    <option value="Férias">
+                        Férias
+                    </option>
+
+                    <option value="Baixa médica">
+                        Baixa médica
+                    </option>
+
+                    <option value="Folga">
+                        Folga
                     </option>
 
                 </select>
 
 
-                <div class="horas">
+                <div id="areaHorario">
 
-                    <div>
+                    <label for="horario">
+                        Horário do dia
+                    </label>
 
-                        <label for="entrada">
-                            Entrada
-                        </label>
+                    <select id="horario">
 
-                        <input
-                            type="time"
-                            id="entrada"
-                            value="08:00"
-                        >
+                        <option value="08:00-17:00">
+                            08:00 – 17:00
+                        </option>
 
-                    </div>
+                        <option value="07:00-15:00">
+                            07:00 – 15:00
+                        </option>
 
+                        <option value="08:00-17:30">
+                            08:00 – 17:30
+                        </option>
 
-                    <div>
+                    </select>
 
-                        <label for="saida">
-                            Saída
-                        </label>
-
-                        <input
-                            type="time"
-                            id="saida"
-                            value="17:00"
-                        >
-
-                    </div>
-
-                </div>
-
-
-                <div id="almoco">
 
                     <div class="horas">
 
                         <div>
 
-                            <label for="saidaAlmoco">
-                                Saída almoço
+                            <label for="entrada">
+                                Entrada
                             </label>
 
                             <input
                                 type="time"
-                                id="saidaAlmoco"
-                                value="13:00"
+                                id="entrada"
+                                value="08:00"
                             >
 
                         </div>
@@ -199,74 +165,247 @@
 
                         <div>
 
-                            <label for="retornoAlmoco">
-                                Regresso almoço
+                            <label for="saida">
+                                Saída
                             </label>
 
                             <input
                                 type="time"
-                                id="retornoAlmoco"
-                                value="14:00"
+                                id="saida"
+                                value="17:00"
                             >
 
                         </div>
 
                     </div>
 
+
+                    <div id="almoco">
+
+                        <div class="horas">
+
+                            <div>
+
+                                <label for="saidaAlmoco">
+                                    Saída almoço
+                                </label>
+
+                                <input
+                                    type="time"
+                                    id="saidaAlmoco"
+                                    value="13:00"
+                                >
+
+                            </div>
+
+
+                            <div>
+
+                                <label for="retornoAlmoco">
+                                    Regresso almoço
+                                </label>
+
+                                <input
+                                    type="time"
+                                    id="retornoAlmoco"
+                                    value="14:00"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="intervalo15"
+                        class="intervalo-info"
+                    >
+                        Intervalo de 15 minutos
+                    </div>
+
+
+                    <div class="total">
+
+                        Total trabalhado:
+
+                        <strong id="totalHoras">
+                            8h 0min
+                        </strong>
+
+                    </div>
+
                 </div>
 
 
-                <div class="total">
+                <label for="observacao">
+                    Observação
+                </label>
 
-                    Total trabalhado:
+                <textarea
+                    id="observacao"
+                    rows="3"
+                    placeholder="Observação opcional"
+                ></textarea>
 
-                    <strong id="totalHoras">
-                        8h 0min
-                    </strong>
 
-                </div>
+                <button
+                    id="guardar"
+                    class="botao-principal"
+                >
+                    GUARDAR REGISTO
+                </button>
+
+                <button
+                    id="cancelarEdicao"
+                    class="botao-secundario escondido"
+                >
+                    CANCELAR EDIÇÃO
+                </button>
+
+            </section>
+
+
+            <section class="botoes">
+
+                <button id="historico">
+                    HISTÓRICO
+                </button>
+
+                <button id="calendario">
+                    CALENDÁRIO MENSAL
+                </button>
+
+                <button id="resumo">
+                    RESUMO MENSAL
+                </button>
+
+            </section>
+
+
+            <p class="aviso">
+                Registo para controlo pessoal do funcionário.
+            </p>
+
+        </section>
+
+
+        <section
+            id="telaHistorico"
+            class="escondido"
+        >
+
+            <div class="topo-tela">
+
+                <button
+                    id="voltarHistorico"
+                    class="botao-voltar"
+                >
+                    ← VOLTAR
+                </button>
+
+                <h2>Histórico</h2>
 
             </div>
 
-
-            <label for="observacao">
-                Observação
-            </label>
-
-            <textarea
-                id="observacao"
-                rows="3"
-                placeholder="Observação opcional"
-            ></textarea>
-
-
-            <button id="guardar">
-                GUARDAR REGISTO
-            </button>
+            <div id="listaHistorico"></div>
 
         </section>
 
 
-        <section class="botoes">
+        <section
+            id="telaCalendario"
+            class="escondido"
+        >
 
-            <button id="historico">
-                HISTÓRICO
-            </button>
+            <div class="topo-tela">
 
-            <button id="calendario">
-                CALENDÁRIO MENSAL
-            </button>
+                <button
+                    id="voltarCalendario"
+                    class="botao-voltar"
+                >
+                    ← VOLTAR
+                </button>
 
-            <button id="resumo">
-                RESUMO MENSAL
-            </button>
+                <h2>Calendário mensal</h2>
+
+            </div>
+
+            <div class="cartao">
+
+                <div class="navegacao-mes">
+
+                    <button id="mesAnterior">
+                        ←
+                    </button>
+
+                    <strong id="tituloMes"></strong>
+
+                    <button id="mesSeguinte">
+                        →
+                    </button>
+
+                </div>
+
+                <div class="dias-semana">
+
+                    <span>Seg</span>
+                    <span>Ter</span>
+                    <span>Qua</span>
+                    <span>Qui</span>
+                    <span>Sex</span>
+                    <span>Sáb</span>
+                    <span>Dom</span>
+
+                </div>
+
+                <div id="gradeCalendario"></div>
+
+            </div>
 
         </section>
 
 
-        <p class="aviso">
-            Registo para controlo pessoal do funcionário.
-        </p>
+        <section
+            id="telaResumo"
+            class="escondido"
+        >
+
+            <div class="topo-tela">
+
+                <button
+                    id="voltarResumo"
+                    class="botao-voltar"
+                >
+                    ← VOLTAR
+                </button>
+
+                <h2>Resumo mensal</h2>
+
+            </div>
+
+            <div class="cartao">
+
+                <div class="navegacao-mes">
+
+                    <button id="resumoMesAnterior">
+                        ←
+                    </button>
+
+                    <strong id="tituloResumoMes"></strong>
+
+                    <button id="resumoMesSeguinte">
+                        →
+                    </button>
+
+                </div>
+
+                <div id="conteudoResumo"></div>
+
+            </div>
+
+        </section>
 
     </main>
 
